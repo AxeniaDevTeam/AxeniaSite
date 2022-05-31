@@ -1,0 +1,10 @@
+.idea
+*.iml
+/web/users/*
+/bot/config.php
+/web/data/groups.json
+/web/data/users.json
+/zina/config.php
+.vscode
+axenia2
+configs
