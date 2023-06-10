@@ -16,14 +16,13 @@ $chat_id=$_GET['chat_id'];
                 $users=array_chunk($site->getTopUsers($chat_id),10);
                 if(count($users)>1)
                     foreach($users as $n=>$u){
-                        echo "<li data-target=\"#carouselIndicators\" data-slide-to=\"$n\"";
+                        echo "<li type='button' data-bs-target=\"#carouselIndicators\" data-bs-slide-to=\"$n\"";
                         if($n==0)echo "class=\"active\"";
                         echo ">".($n+1)."</li>";
                     }
             ?>
         </ol>
         <div class="carousel-inner">
-            
             <?php 
                 foreach($users as $n=>$u){
                     echo "<div class=\"carousel-item";

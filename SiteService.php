@@ -5,8 +5,7 @@ require_once("config.php");
 require_once('bots/axenia/core/AbstractDao.php');
 require_once('bots/axenia/logic/BotDao.php');
 require_once('bots/axenia/logic/BotService.php');
-/*
-require_once('SiteDao.php');*/
+require_once('SiteDao.php');
 
 class SiteService
 {
